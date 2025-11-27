@@ -1,4 +1,4 @@
-#include"process.h"
+#include"detect/process.h"
 
 
 
@@ -144,12 +144,6 @@ std::vector<Armor> Process::findArmor(const std::vector<Light>& lightArray)
 
             am.width = cv::norm(am.up.center - am.down.center);
             am.height = (am.up.length + am.down.length) * 0.5f;
-
-            am.box = cv::RotatedRect(
-                am.center,
-                cv::Size2f(am.width, am.height),
-                (am.up.angle + am.down.angle) * 0.5f
-            );
 
             am.lightcontours.push_back(a.contour);
             am.lightcontours.push_back(b.contour);

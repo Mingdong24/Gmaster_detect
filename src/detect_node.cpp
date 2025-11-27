@@ -1,4 +1,4 @@
-#include"detect.h"
+#include"detect/detect.h"
 
 int main(int argc,char** argv)
 {

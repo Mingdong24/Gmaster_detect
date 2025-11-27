@@ -1,4 +1,4 @@
-#include"detect.h"
+#include"detect/detect.h"
 
 ImageSubscribe::ImageSubscribe(std::string name) : Node(name)
 {
